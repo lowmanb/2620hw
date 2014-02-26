@@ -1,0 +1,211 @@
+\documentclass{2620hw}
+
+\hwnum{3}
+\due{February 7th, 2014}
+
+\begin{document}
+\maketitle
+	
+\begin{enumerate}
+	
+	\item 
+	\begin{enumerate}
+	
+	\item Applying the Lorentz transformation
+	\[
+		E' = \gamma_v(E - vp) = \gamma_v(\gamma_umc^2-v\gamma_umu) = m\gamma_{u'}\gamma_v(c^2-vu')
+	\]
+	\item 
+	\[
+		\frac{E'}{mc^2} =  \frac{ m\gamma_{u'}\gamma_v(c^2-vu')}{mc^2}  = \gamma_{u'}\gamma_v(1 + \beta_v\beta_{u'}) 
+	\]
+	It is clear that the factor $(1 + \beta_v\beta_{u'})$ will always be greater than one. As such, the entire term $\gamma_{u'}\gamma_v(1 + \beta_v\beta_{u'}) > \gamma_{u'}\gamma_v$
+
+	\item
+	\[
+		\gamma_u > \gamma_v \gamma_{u'} \quad \Rightarrow \quad 1.25 > 1.09 \gamma_{u'}
+	\]
+	
+	\end{enumerate}
+	
+
+	\item [2-9] 
+	\begin{enumerate}
+	\item 					
+	The reletavistic energy $E$ of a moving object of mass $m$ and velocity $u$ is 
+	\[
+		E = \gamma mc^2 = \frac{mc^2}{ \sqrt{ 1 - \frac{u^2}{c^2}}}
+	\]
+	Solving for $u$
+	\[
+		\sqrt{ 1 - \frac{u^2}{c^2}} = \frac{mc^2}{E} 
+	\]
+	\[
+		\frac{u^2}{c^2}  = 1 - \left( \frac{mc^2}{E} \right)^2
+	\]
+	\[
+		u = c \; \sqrt{ 1 - \left( \frac{mc^2}{E} \right)^2}
+	\]
+	Substituting values
+	\[
+		u = c \; \sqrt{ 1 - \left( \frac{1.8484\e{2}\un{GeV}}{3.94\e{4}\un{GeV}} \right) } = 0.997652c
+	\]
+	
+	\item Using the relativistic momentum equation
+	\[
+		p = \gamma mu = \frac{1}{\sqrt{1 - 0.997652^2}} \times 184.8\un{GeV/c^2} \times 0.997652c = 3804.8\un{GeV/C}
+	\]
+		\begin{multline*}
+		p' = \gamma_u \left(p - \frac{uE}{c^2} \right) =  \frac{1}{\sqrt{ 1 - 0.997652^2}}\times\\\times \left( 3804.8\un{GeV/C} - \frac{0.997652c \times 3.94\e{4}\un{GeV}}{c^2} \right) =   -0.41\e{4}\un{GeV}
+\end{multline*}	
+		
+		\begin{multline}
+			E' = \gamma_u (E - up) =  \frac{1}{\sqrt{ 1 - 0.997652^2}}\times\\\times ( 3.94\e{4}\un{GeV/C} - 0.997652c \times 3804.8\un{GeV}) =  0.41\un{MeV}		
+		\end{multline}
+
+	\end{enumerate}
+
+	\item [2-17] Given 
+	\[
+		{}^3_1H \rightarrow {}^2_1H	+ n
+	\]
+	And the equations for rest energy
+	\[
+		E_{{}^3H} = m_{{}^3H}c^2 = (3.01649)(931.495\un{Mev}) = 2809.42 \un{MeV}
+	\]
+	\[
+		E_{{}^2H} = m_{{}^2H}c^2 = (2.014102)(931.495\un{MeV}) = 1876.126 \un{MeV}	
+	\]
+	\[
+		E_{n} = m_{n}c^2 = 939.565\un{MeV}
+	\]
+	The energy required to remove the neturon is the difference it rest energy before and after the decomposition
+	\[
+		E = (E_{{}^2H} + E_n) -  E_{{}^3H} = (1876.126 \un{MeV} + 939.565\un{MeV}) - 2809.42 \un{MeV} = 6.271\un{MeV}
+	\]
+
+	\item [2-24] 
+	\begin{enumerate}
+	
+	\item Using the following three equations (where $P_r = $ radiation pressure when light is absorbed and $P = $ power)
+	\[
+		P_r = \frac{I}{c} \quad\quad P_r = \frac{F}{A} \quad\quad I = \frac{P}{A} 
+	\]
+	An equation for force in terms of the necessary quantities can be derived 
+	\[
+		F = \frac{IA}{C} =  \frac{P}{c} 
+	\]
+	Substituting values
+	\[
+		F = \frac{1 \un{W}}{c} = 0.333\e{-8}\un{N} 
+	\]
+
+	\item For light reflecting off the hand, the formula for radiation pressure becomes $F = \frac{2I}{c}$.
+	\[
+		F = \frac{2\times 1 \un{W}}{c} = 0.666\e{-8}\un{N}
+	\]
+	Following from Newton's second law, the mass of such a particle on earth's surface is
+	\[
+		m = \frac{F}{g}  
+	\]
+	For each case
+	\[
+		F_{absorbed} = \frac{0.333\e{-8}\un{N}}{9.81 m/s^2}  =  3.39\e{-10}\un{kg}
+	\]
+	\[
+		F_{reflected} = \frac{0.666\e{-8}\un{N}}{9.81 m/s^2} =  6.79\e{-10}\un{kg}
+	\]
+	\end{enumerate}
+
+	\item [2-30] Knowing that the centripital force of the electron and the force exerted by the Magnetic field are eaual
+	\[
+		quB = m\frac{u^2}{r} \quad \Rightarrow \quad B = m\frac{u}{qr} 
+	\]
+	Because the total energy of the electron is known, the reletavistic momentum equation can be used to calculate $u$
+	From problem 1-9:
+	\[
+			u = c \; \sqrt{ 1 - \left( \frac{mc^2}{E}  \right)^2} = c \; \sqrt{ 1 - \left( \frac{.511\un{MeV}}{4.0\un{Mev}}  \right)^2} = 0.9918c
+	\]
+	Solving for B
+	\[
+		B = m\frac{u}{qr} = \frac{9.1\e{-31}\un{kg}(0.9918c)}{1.6\e{-19}\un{C}\times4.2\e{-2}\un{m}} = 
+	\]
+	The factor that $\gamma m$ exceeds $m$ is given by
+	\[
+		\frac{\gamma m - m}{m} = \gamma - 1 = \frac{1}{\sqrt{ 1 - v^2}} - 1 = 0.0403 \un{N/C}
+	\]
+
+	\item [2-39] The time dialation due to gravity is given by the equation
+	\[
+		\frac{T'}{T}  = \sqrt{ 1 - \frac{2GM}{Rc^2}} = \sqrt{ 1 - \frac{2G \times 5.972\e{24}\un{kg} }{3\e{5}\un{m }c^2} } = .99999998522 
+	\]
+	The time dialation due to velocity is given by the equation 
+	\[
+		\frac{T'}{T} = \gamma = \frac{1}{\sqrt{ 1 - \frac{v^2}{c^2}}} 
+	\]
+	With the satelites velocity equal to $\frac{6\e{5}\un{m}\pi}{1.5*3600 \un{s}} =  349.1 \un{m/s}$
+	\[
+		\gamma = 1 
+	\]
+	Multiplying the dialation factors gives the net time dialation. In this case the result is .99999998522 \un{s}. 
+ After one year, the time difference is 
+	\[
+	\frac{31557600\un{s}}{0.99999998522\un{s}} - 31557600\un{s} =  0.47\un{s}
+	\]
+
+
+	\item [2-42]
+	\begin{enumerate}
+	
+	\item [(b)]Using the formula for the kinetic energy
+	\[
+	E_k = \gamma mc^2 - mc^2 = (\gamma-1)mc^2
+	\]
+	\[
+		\gamma = 1 = \frac{E_k}{mc^2}  = 2
+	\]
+	Solving for $u$
+	\[
+		2 = \gamma  = 	\frac{1}{\sqrt{1 - \frac{u^2}{c^2} a}}
+	\]
+	\[
+		u = \frac{u^2}{c^2}  = \frac{3}{4} 
+	\]
+	\[
+		u = 0.866c
+	\]
+	
+
+	\item [(a)] Solving for $p$
+	\[
+		p = \gamma mu = 2m(0.866c) = 1624.5\un{MeV/c}
+	\]
+	
+	\end{enumerate}
+
+	\item Fractional frequency  red shift is given by the equation
+	\[
+		\frac{f}{f_0} = 1 - \frac{GM}{c^2R} 
+	\]
+	Solving for $R$
+	\[
+		\frac{f}{f_0}  = \frac{c^2r-GM}{c^2R} 
+	\]
+	\[
+		R\left(c^2-c^2 \frac{f}{f_0} \right) = GM
+	\]
+	\[
+		R = \frac{GM}{c^2-c^2 \frac{f}{f_0} } =  \frac{GM}{c^2\left(1- \frac{f}{f_0}\right)} 
+	\]
+	Substituting values
+	\[
+		R = \frac{G \times (2\e{30}\un{kg})}{c^2(1-7\e{-4})} = 1486 \un{m} 
+	\]
+	The density of the white dwarf is then
+	\[
+		d = \frac{M}{V} =  \frac{3 \times (2\e{30}\un{kg})}{4 \pi (1486\un{m})^3} = 1.45\e{20}\un{kg/m^3}
+	\]
+
+\end{enumerate}
+
+\end{document}

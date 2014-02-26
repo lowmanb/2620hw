@@ -1,0 +1,140 @@
+\documentclass{2620hw}
+
+\hwnum{4}
+\due{February 13th, 2014}
+
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+		
+\item [2-52]
+\begin{enumerate}
+	\item 
+\end{enumerate}
+
+\item [3-15]
+\begin{enumerate}
+
+    \item Applying Wein's displacement law
+	\[
+		\lambda_m T = 2.898\e{-3}\un{m \cdot k}
+	\]
+	\[
+		\lambda_m = \frac{2.898\e{-3}\un{m \cdot k}}{2.7\un{k}} = 1.0733\e{-3}\un{m}
+	\]
+	
+	\item 
+	\[
+		f = \frac{c}{\lambda_m} = \frac{c}{1.0733\e{-3}\un{m}} = 279.5 \un{GHz}
+	\]
+	
+	\item Power is given by the equation 
+	\[
+		P = \sigma AT^4
+	\]
+	For $A = 4\pi R^2$ (surface of the earth) and $R = 6.38\e{6}\un{m}$
+	\[
+		P =  (5.67\e{-8}\un{W/m^2 \cdot K^4})(4\pi ( 6.38\e{6}\un{m})^2)(2.7\un{K})^4 = 1.54\e{9}\un{W}
+	\]
+
+\end{enumerate}
+
+\item [3-26]
+\begin{enumerate}
+
+    \item The threshold frequency is given by the equation
+	\[
+		\phi = hf_1 \; \Rightarrow \; f_1 = \frac{\phi}{h}
+	\]
+	\[
+		 f_1 = \frac{\phi}{h} = \frac{1.9\un{eV} \cdot 1.6\e{-19}\un{J/eV}}{6.62\e{-34}\un{J\cdot s}} = 459.2\un{THz}
+	\]
+	
+	\item
+	Solving Einsteins equation for the photoelectric effect yeilds 
+	\[
+		V_0 = \frac{hc}{\lambda e} - \frac{\phi}{e}
+	\]
+	For $\lambda = 300\un{nm}$
+	\[
+		V_0 = \frac{(6.62 \e{-34}\un{J\cdot s}) (c)}{(300 \e{-9}\un{m})(1.6 \e{-19}\un{C})} - \frac{3.04 \e{-19}\un{J}}{1.6 \e{-19}\un{C}} = 1.2375\un{V}
+	\]
+	\item
+	\[
+	V_0 = \frac{(6.62 \e{-34}\un{J\cdot s}) (c)}{(400 \e{-9}\un{m})(1.6 \e{-19}\un{C})} - \frac{3.04 \e{-19}\un{J}}{1.6 \e{-19}\un{C}} = 1.203\un{V}
+	\]
+
+\end{enumerate}
+
+\item [3-51]
+
+
+\item [3-55]
+\begin{enumerate}
+    \item With $C = 8\pi hc$ and $a = \frac{hc}{kt}$, the energy density distribution function can be written as 
+	\[
+		u(\lambda) = C \lambda^{-5} ( e^{a/\lambda} - 1)^{-1}
+	\]
+	And 
+	\[
+		\frac{du}{d\lambda} = \frac{a e^{a/\lambda} - 5x(e^{a/\lambda} - 1)}{\lambda^7(e^{a/\lambda}-1)^2}
+	\]
+\end{enumerate}
+
+\item [3-57]
+\begin{enumerate}
+    \item 
+\end{enumerate}
+
+\item [3-59]
+\begin{enumerate}
+    \item The electron loses $50\un{keV}$ of energy in the two collisions. The photons, therefore, cumulatively gain $50\un{keV}$ of energy. As the energy of a photon can be given by the equation 
+	\[
+		E = \frac{hc}{\lambda}
+	\]
+	The energy of the two photons together can be written 
+	\[
+		E = hc \left( \frac{1}{\lambda_1} + \frac{1}{\lambda_1 + C} \right)
+	\]
+	Solving for $\lambda_1$ first yields the following quadratic equation
+	\[
+		0 = E\lambda_1^2 + CE\lambda_1^2 - hc(2E + C)
+	\]
+	Solving for the positive root of the above quadratic
+	\[
+		\lambda_1 = \frac{ (4(hc)^2 + C^2E^2)^{1/2} + 2hc - CE}{2E}
+	\]
+	\[
+		= \frac{ [4(hc)^2 + (0.095\e{-9}\un{m})^2(50\un{keV})^2]^{1/2} + 2hc - (0.095\e{-9}\un{m})(50\un{keV)}}{2(50\un{keV})}
+	\]
+	
+	\item The energy of the electron after the first collision is the total energy of the electron before the collision minus the energy gained by the proton from the collision
+	\[
+		E_{\text{after first collision}} = 50\un{keV} - blank = 
+	\]
+	
+\end{enumerate}
+
+\item [4-9] The closest approach is given by the following equation
+\[
+	r_d = \frac{kq_{\alpha}Q}{\frac{1}{2}m_{\alpha}v^2}	
+\]
+\begin{itemize}
+	\item For $\alpha = 5MeV$
+	\[
+		r_d = \frac{k(2e)(79e)}{(5\un{MeV})(1.62\un{J/eV})} = 45.5 \un{fm}
+	\]		
+	\item For $\alpha = 7.7MeV$
+	\[
+		r_d = \frac{k(2e)(79e)}{(7.7\un{MeV})(1.62\un{J/eV})} = 29.5 \un{fm}
+	\]
+	\item For $\alpha = 12MeV$
+	\[
+	r_d = \frac{k(2e)(79e)}{(12\un{MeV})(1.62\un{J/eV})} = 19 \un{fm}
+	\]
+\end{itemize}
+
+\end{enumerate}
+
+\end{document}

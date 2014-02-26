@@ -1,0 +1,91 @@
+\documentclass{physicsHW}
+
+\hwnum{1}
+\due{January 24th, 2014}
+
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+
+\item (1-2)
+	\begin{enumerate}
+		\item 
+			\[\frac{2L}{c} = 2 \cdot \frac{27.4\e{3}\un{m}}{c} = 1.83\e{-4}\un{s}\]
+		\item For the longitudinal beam:
+			\[t_{correction} \approx \left( 1 + \frac{(10^{-4}c)^2}{c^2} \right) \approx 1\e{-8}\un{s}\]
+		\item The correction term, in terms of $c$, is then $3 \un{m/s}$. This is much smaller than $4 \un{km/s}$ -- the experimental value is not accurate enough to be sensitive to this correction.
+	\end{enumerate}
+
+\item (1-3) The difference in travel time between the longitudinal and transverse beams is given by equation 1-6 (pg. 9). This approximation treats the longitudinal correction factor equal to the transverse correction factor.
+	\[\Delta t \approx \frac{Lv^2} {c^3}\]
+	Because the time difference is approximated to be the same when the apparatus is shifted 90 degrees, the cumulative time shift between the waves is 
+	\[\Delta t \approx \frac {2Lv^2} {c^3} \]
+	Multiplying by $c$ gives the total distance difference between the waves, and dividing by the wavelength $\lambda$ gives the fringe shift $n$.
+	\[n \approx \frac{2Lv^2} {\lambda c^2}\]
+	For $n = 1$, $L = 11 \un{m}$, and $\lambda = 590 \un{nm}$ (sodium light source): 
+	\[v \approx \sqrt{\frac{590 \un{nm} \cdot c^2} {2 \cdot 11 \un{m}}} \approx 49.1 \un{km/s} \] 
+	
+
+		
+	
+\item (1-5) 
+	\begin{enumerate}
+		\item After 2 seconds, a ring of light reflected from the circumference of the largest cricle taken from the sphere in the plane perpendicular to motion reaches the center. It then splits in two and shrinks into points on opposite ends of the axis parallel to the direction of motion.
+		\item After 2 seconds, the entire sphere lights up uniformly. 
+	\end{enumerate}
+
+\item (1-10)
+	\begin{enumerate}
+		\item Yes.\footnote{Is this not arbitrary? If the train is the ``stationary" frame (where the flashes are simultaneous), then the light flashes in the ``moving" frame (outside) cannot be simultaneous. On the contrary, if outisde the train is the ``stationary" frame, then the flashes in the train (the ``moving frame") cannot be simultaneous. Each scenario produces different results, but is each case not equally valid?}
+		\item No;
+		\item from $S$, light would reach $A'$ before it reaches $C'$. Where $d$ is the distance from $A'$ to $B'$ and $B'$ to $C'$ (relative to frame $S$):
+			\[t_{C'} - t_{A'} = \frac{d}{c-v} - \frac{d}{c+v} = \frac{2dv}{c^2-v^2}\]
+	\end{enumerate}
+
+\item (1-15) Where $- u_x = v$
+	\[u_x' = \frac{u_x-v} {1-\dfrac{vu_x} {c^2}} = \frac{2u_x}{1+\beta^2}\]
+	\begin{enumerate}
+		\item For $v = 0.9c$
+			\[\frac{2u_x}{1+\beta^2} = \frac{1.8c}{1+\dfrac{(-0.9c)^2}{c^2}} = 0.994c \]
+		\item For $v = 3\e{5}\un{m/s}$
+			\[\frac{2u_x}{1+\beta^2} = \frac{6\e{5}\un{m/s}}{1+\dfrac{(-3\e{5}\un{m/s})^2}{c^2}} = 59.9 \un{km/s} \]
+		
+	\end{enumerate}
+
+\item (1-18)
+	\begin{enumerate}
+		\item \[u_x = \frac{u_x'+v} {1+ \dfrac{vu_x'} {c^2}} = \frac{v} {1} = v\]
+			\[u_y = \frac{u_y'} {\gamma \left( 1+ \dfrac{vu_x'} {c^2} \right)} =  \frac{c} {\gamma} \]
+		\item \[|u| = \sqrt{u_x^2+u_y^2} =  \sqrt{ v^2+ c^2 \left(1 - \frac{v^2}{c^2} \right)} = \sqrt{ v^2 + c^2 - v^2} = c \] 
+	\end{enumerate}
+
+\item (1-20) Recall that
+	\[\gamma = \frac{1} {\sqrt{1-\beta^2}}\]
+	The following approximations follow from this general binomial expansion
+	\[(1+a)^n = \sum_{k=0}^n {n \choose k} a^k\]
+	where the first two terms will always be
+	\[1^n + n\cdot 1^{n-1}a\]
+	\begin{enumerate}
+		\item \[\gamma = \left( 1 - \frac{v^2}{c^2} \right)^{-1/2} \approx 1^{-1/2} - \frac{1}{2}\cdot 1^{1/2} \cdot - \frac{v^2}{c^2} \approx 1 + \frac{v^2}{2c^2}\]
+		\item \[\frac{1}{\gamma} = \left( 1 - \frac{v^2}{c^2} \right)^{1/2} \approx 1^{1/2} + \frac{1}{2}\cdot 1^{-1/2} \cdot -  \frac{v^2}{c^2} \approx 1 - \frac{v^2}{2c^2}\]
+		\item \[\gamma - 1 \approx 1 - \frac{1}{\gamma} = 1 - \left(1 - \frac{v^2}{c^2} \right) \approx \frac{v^2}{2c^2} \]
+	\end{enumerate}
+
+\item (1-23) Where $L_0$ is proper length
+	\begin{enumerate}
+		\item \[L = \frac{L_0}{\gamma} = 1 \un{m} \cdot \sqrt{1 + \frac{(0.6c)^2} {c^2}} = 0.8 \un{m}\]
+		\item \[t = \frac{L} {v} = \frac{0.8\un{m}} {0.6c} = 4.44 \un{ns} \]
+		\item Space-time diagram: 
+			\leavevmode\vadjust{\vspace{-\baselineskip}}\newline
+			\begin{figure}[ht]
+			\centering
+			\includegraphics[width=90mm]{1.png}
+			\end{figure}
+			\end{enumerate}
+
+			
+
+\end{enumerate}
+
+\end{document}

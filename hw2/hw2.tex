@@ -1,0 +1,217 @@
+\documentclass{physicsHW}
+
+\hwnum{1}
+\due{January 31, 2014}
+
+\begin{document}
+\maketitle
+	
+	\begin{enumerate}
+		
+		\item (1-30) The change in frequency is given by the equation
+		\[
+			f = \sqrt{\frac{1 + \beta^2}{1 - \beta}}f_0 
+		\]
+		 Applying the relationship $\lambda = \frac{c}{f}$ and solving for $v$ yeilds
+		\[
+			v =c \cdot \frac{1 - \left( \frac{\lambda}{\lambda_0} \right)^2 }{1 +\left( \frac{\lambda}{\lambda_0} \right)^2} 
+		\]
+		For $\lambda_0 = 650$
+		
+		\begin{itemize}
+			\item $\lambda = 590 \un{nm}$
+			\[
+				v =c \cdot \frac{1 - \left( \frac{590\un{nm}}{650\un{nm}} \right)^2 }{1 +\left( \frac{590\un{nm}}{650\un{nm}} \right)^2} = 0.097c
+			\]
+			\item $\lambda = 525 \un{nm}$
+			\[
+				v =c \cdot \frac{1 - \left( \frac{525\un{nm}}{650\un{nm}} \right)^2 }{1 +\left( \frac{525\un{nm}}{650\un{nm}} \right)^2} = 0.210c
+			\]
+			\item $\lambda = 460 \un{nm}$
+			\[
+				v =c \cdot \frac{1 - \left( \frac{460\un{nm}}{650\un{nm}} \right)^2 }{1 +\left( \frac{460\un{nm}}{650\un{nm}} \right)^2} = 0.333c
+			\]
+		\end{itemize}
+		
+		
+		
+		\item (1-41)
+		\begin{enumerate}
+			\item From the Lorentz transformations: 
+			\[
+				t'^{\, 2} (1-v^2) = (t - vx)^2	
+			\]
+			Solving for $v$ yeilds $v = 0.8c$
+			\item
+			The stationary person's age in $S$ (i.e. $t$) is the distance of the journey divided by the velocity of the friend in with respect to $S$.
+			\[
+				t = \frac{8c \un{y}}{0.8c} = 10 \un{y} 
+			\]
+			\item 
+			\leavevmode\vadjust{\vspace{-\baselineskip}}\newline
+			\begin{figure}[ht!]
+			\begin{center}
+			    \includegraphics[width =90mm]{1.png}
+			\end{center}
+			\end{figure}
+
+
+		\end{enumerate}
+
+		\item (1-47) 
+		\begin{enumerate}
+			\item The ships' lengths relative to earth $L$ are given by the proper length divided by $\gamma$ 
+			\[
+				L = L_0 \sqrt{1 - \frac{v^2}{c^2} } = 100\un{m} \sqrt{1 - \frac{(0.85c)^2}{c^2} } = 52.68\un{m} 
+			\]
+
+			\item Relative to someone on board one ship with velocity $v$, the other's velocity $u_x$ is given by the equation 
+			\[
+				u_x = \frac{u_x'-v}{\left( 1 - \dfrac{vu_x'}{c^2} \right)} = \frac{-1.7c}{ 1 + 0.85^2} = -0.987c  
+			\]
+			\item The ships length as measured by someone aboard the other ship is calculataed the same way as part (a), only using the relative velocity found in part (b). 
+			\[
+				L = L_0 \sqrt{1 - \frac{v^2}{c^2} } = 100\un{m} \sqrt{1 - \frac{(-0.987c)^2}{c^2} } = 16.07\un{m} 
+			\]
+			\item The ship's ends pass eachother on earth in the time it takes for one ship to travel its length as seen from earth . That is
+			\[
+				t = \frac{52.68\un{m}}{0.85c} = 6.198\e{-7}\un{s}
+			\]
+			\item
+			\leavevmode\vadjust{\vspace{-\baselineskip}}\newline
+			\begin{figure}[ht!]
+			\begin{center}
+			    \includegraphics[width=90mm]{2.png}
+			\end{center}
+			\end{figure}
+
+
+
+				
+		\end{enumerate}
+
+
+		\item (1-50)
+		\begin{enumerate}
+			\item The slope of the line between in the events is equal to $B = -0.5$ The velocity of $S'$ with respect to $S$, then, must be $-0.5c$
+			\item The equation of the line between the two events is
+			\[
+				ct = \frac{3}{2} \un{ct} +  \beta x 
+			\]
+			The $ct$ coordinate of the intersection ($x = -1$ of this line with the worldline $ct'$ is the time at which the event occured in $S$.
+			\[
+				ct = \frac{3}{2} + \frac{1}{2} = 2
+			\]
+			Dividing by $\gamma$ gives the time in $S'$
+			\[
+				ct' = 2\sqrt{1 - \beta^2} =  1.73 \un{y}
+			\]
+			\item 
+			\[
+				(\delta s)^2 = (\delta ct)^2 - (\delta x)^2 = -.75c^2t^2
+			\]
+			\item 
+			\[
+				L_p = \sqrt{-(\delta s)^2} = 0.866ct
+			\]
+		
+			
+		\end{enumerate}
+
+		\item (1-55) The equation for the spherical wave front of a light pulse that begins at the origin at time $t=0$ is 
+		\[
+			x^2 + y^2 + x^2 - (ct)^2 = 0 \text{ or } x^2 + y^2 + x^2 = (ct)^2
+		\]
+		Substituting in the Lorentz factor
+		\[
+			\gamma^2(x'-vt')^2 + y'^{\,2} + z'^{\,2} = \gamma^2 (ct' -  \beta x')^2 
+		\]
+		\[
+			\gamma^2 [x'^{\,2}-2x'vt'+(vt')^2] + y'^{\,2} + z'^{\,2} = \gamma^2 [(ct')^2 - 2\beta x'+ (\beta x')^2]
+		\]
+		\[
+			\gamma^2 [ x'^{\,2} - 2 x' \beta ct' + (\beta ct')^2] +  y'^{\,2} + z'^{\,2} = \gamma^2 [(ct')^2 - 2\beta x'+ (\beta x')^2]
+		\]
+		\[
+			x'^{\,2} \gamma^2 (1 - \beta^2)  + y'^{\,2} + z'^{\,2} = \gamma^2(1-\beta^2)
+		\]
+		\[
+			x'^{\,2} + y'^{\,2} + z'^{\,2} = 1
+		\]
+		The equation holds.
+
+		\item (1-57) Given the Lorentz transformations
+		\begin{enumerate}
+			\item
+			\[
+				t_2' = \gamma \left( t_2 - \frac{vx_2}{c^2} \right)
+			\]
+			\[
+				t_1' = \gamma \left( t_1 - \frac{vx_1}{c^2} \right)
+			\]
+			\[
+				t_2' - t_1' = \gamma \left[ t_2 - t_1 - \frac{v(x_2-x_1)}{c^2} \right] = \gamma \left( T - \frac{vD}{c^2} \right)
+			\]
+
+			\item For the events to be simultaneous in $S'$, $t_1'$ must equal $t_2'$. Multiplying the result from (a) by $c$ yeilds the equation
+			\[
+				\frac{v}{c}  = \frac{ct}{D} 
+			\]
+			As $\frac{v}{c} < 1$, $D > cT$
+			\item If $D < cT$, then
+			\[
+				T - \frac{vD}{c^2} < T - \frac{vT}{c} = T \left (1 - \frac{v}{c} \right)
+			\]
+		    This expression is always positive for $T > 0$
+			\item If $T = \frac{D}{c'} $ where $c' > c$, then 
+			\[
+				T - \frac{vD}{c^2}  = \frac{D}{c'} - \frac{vD}{c^2} = \frac{D}{c} \left( \frac{c}{c'} - \frac{v}{c} \right)
+			\]
+			For and $v$ smaller than $c$ this expression is less than one. That is $t_1' > t_2'$
+
+
+		\end{enumerate}
+
+		\item (1-60)
+		\begin{enumerate}
+			\item The velocity of $A$ relative to $B$ is the sum of vector components $u_x$ and $u_y$.
+			\[
+				u_x =  \frac{u_x'+v}{\left(1+\frac{vu_x'}{c^2} \right)} = \frac{0+v_b}{1+0}  = v_b
+			\]
+			\[
+				u_y = \frac{u_y'}{\gamma \left(1+ \frac{vu_x'}{c^2} \right)} = \frac{v_a}{\gamma(1+0)}  = v_a\sqrt{1-\frac{v_b^2}{c^2}} 
+			\]
+			\item The velocity of $B$ relative to $A$ is found the same way
+			\[
+				u_x =  \frac{u_x - v}{1 - \left(\frac{vu_x}{c^2} \right) } =  \frac{0-v_a}{1-0} = -v_a 
+			\]
+			\[
+				u_y = \frac{u_y'}{\gamma \left(1 - \frac{vu_x}{c^2} \right) } = \frac{v_b}{\gamma(1-0)}  = v_b\sqrt{1 - \frac{v_a^2}{c^2}}
+			\]
+			\item The situations are not generally symetric. $v_{ab}$ is only in the opposite direction of $v_{ba}$ if the ratio of vector components $\frac{u_y}{u_x}$ for $v_{ab}$ and $v_{ba}$ are equal and opposite. By examining the above equations, it is apparent that this is not always the case. 
+		\end{enumerate}
+
+		\item (2-4) From figure 2-3, page 72.
+		\[
+			E_k = mc^2 (\gamma -1)
+		\]
+		\begin{enumerate}
+			\item For $v = 0.5c$
+			\[
+				E_k = mc^2 \left( \frac{1}{\sqrt{1 - 0.5^2}} - 1 \right) =  0.155mc^2
+			\]
+			\item For $v = 0.9c$
+			\[
+				E_k = mc^2 \left( \frac{1}{\sqrt{1 - 0.9^2}} - 1 \right) = 1.29mc^2 
+			\]
+			\item For $v = 0.99c$
+			\[
+				E_k = mc^2 \left( \frac{1}{\sqrt{1 - 0.99^2}} - 1 \right) = 6.09mc^2 
+			\]
+			
+		\end{enumerate}
+
+
+	\end{enumerate}
+
+\end{document}
