@@ -4,41 +4,111 @@
 \due{February 25th, 2014}
 
 \begin{document}
-
-\begin{document}
 \maketitle
-
 \begin{enumerate}
 
-\item 
+\item [5-13]
+	The spacing of the Bragg planes $d$ is related to the spacing of the atoms $D$ by
+	\[
+		d = D \sin{\alpha}
+	\]
+	Solving for $D$
+	\[
+		D = \frac{d}{\sin{\alpha}}
+	\]
+	In terms of $\lambda$, the equation becomes
+	\[
+		n\lambda = D \sin{\varphi}
+	\] 
+	or
+	\[
+		 \lambda = \frac{d\sin{\varphi}}{n \sin{\alpha}} =   \frac{(0.3\un{nm}) (\sin{42})}{\sin{21}} = 0.560 \un{nm}
+	\]
+	Given the DeBrogile relation 
+	\[
+		\lambda = \frac{h}{p} =  \frac{h}{\sqrt{ 2mE_k }}
+	\]
+	Solving for $E_k$
+	\[
+		E_k = \frac{h^2}{2m\lambda^2} = \frac{h^2}{2(938.27 \un{MeV/c^2})(0.560\un{nm})^2} = 2.61 \un{meV}	
+	\]
+
+\item [5-21]
+	Given the uncertainty relation
+	\[
+		\Delta \omega \Delta t = 2\pi \Delta f \Delta t = 1
+	\]
+	Solving for $\Delta t$
+	\[
+		\Delta t = \frac{1}{2\pi \Delta f} = \frac{1}{2\pi (5000 \un{Hz})} = 31.83 \un{\mu s}
+	\]
+
+\item [5-34]
+	The Heisenburg uncertainty is given by 
+	\[
+		\Delta E \Delta t = \frac{\hbar}{2}
+	\]
+	Solving for $\Delta t$
+	\[
+		\Delta t = \frac{\hbar}{2 \Delta E}
+	\]
+	And susbstituting $\Delta E = 2\pi\hbar \Delta f$
+	\[
+		\Delta t = \frac{1}{4\pi \Delta f}
+	\]
+	With $\Delta f = 3.5 \e{14}\un{Hz}$
+	\[
+			\Delta t = \frac{1}{4\pi ( 3.5 \e{14}\un{Hz})} = 0.227 \un{fm}
+	\]
+
+\item [5-35]
+	Given the DeBrogile Relation
+	\[
+		\lambda = \frac{h}{p} = \frac{h}{\sqrt {2mE_k}} = \frac{h}{\sqrt{2(938.27\un{MeV/c^2}(10\un{MeV})}} = 9.05 \un{fm}
+	\]
+	To observe neutron wave behavior, then, the neutron would have to interact with a particle smaller that $9.05 \un{fm}$ It seems (from a quick google) that the diameter of an electron in smaller than this distance. 
+
+\item [5-42]
 \begin{enumerate}
-    \item 
+	\item [(b)] For a ``Particle in a Box"
+	\[
+		E_k = \frac{\hbar^2}{2mL^2} = \frac{\hbar^2}{2(938.27 \un{MeV/c^2})(10^{-15}\un{m})^2} = 20.75 \un{MeV}
+	\]
+	\item [(a)]
+	The velocity of the proton is then
+	\[
+		v = \sqrt{ \left(\frac{2E_k}{m}\right) } = \sqrt{ \left(\frac{20.75 \un{MeV}}{938.27 \un{MeV/c^2}}\right)} = 6.30\e{7}\un{m/s}
+	\]
+	\item [(c)] For an electron
+	\[
+		E_k = \frac{\hbar^2}{2(511\un{keV/c^2})(10^{-15}\un{m})} = 38.1 \un{GeV}
+	\]
 \end{enumerate}
 
-\item 
+\item [5-51]
 \begin{enumerate}
-    \item 
+    \item Applying the DeBrogile relation for both the electron and positron
+	\[
+		\lambda = \frac{h}{p} = \frac{h}{mv} = \frac{h}{(511\un{keV})(3\e{6}\un{m/s})} = 2.42 \un{nm}
+	\]
+	\item The conservation of energy can be written as
+	\[
+		2mc^2 = 2E_{\text{photon}}
+	\]
+	\[
+		E_{\text{photon}} = mc^2 = (511\un{keV}/c^2)c^2 = 511\un{keV}
+	\]
+	\item The momentum of each photon is then 
+	\[
+		p = \frac{E}{c} = 511\un{keV/c}
+	\]
+	\item And the wavelength
+	\[
+		\lambda = \frac{h}{p} = \frac{h}{511\un{keV/c}} = 2.43 \un{pm}
+	\]
+	
 \end{enumerate}
 
-\item 
-\begin{enumerate}
-    \item 
 \end{enumerate}
 
-\item 
-\begin{enumerate}
-    \item 
-\end{enumerate}
-
-\item 
-\begin{enumerate}
-    \item 
-\end{enumerate}
-
-\item 
-\begin{enumerate}
-    \item 
-\end{enumerate}
-
-\end{enumerate}
 \end{document}
