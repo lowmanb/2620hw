@@ -1,0 +1,138 @@
+\documentclass[]{2620hw}
+
+\hwnum{7}
+\due{March 7th, 2014}
+
+\begin{document}
+\maketitle
+\begin{enumerate}
+    
+\item [5-52] 
+\begin{enumerate}
+	\item 
+	\[
+		E = p = n + \pi^+
+	\]
+	Taking the difference of sides of the equation
+	\[
+		(n + \pi^2) - p = 140 \un{MeV}	
+	\]
+	\item From the Heisenberg uncertainty principle
+	\[
+		\Delta E \Delta t \sim \frac{\hbar}{2}
+	\]
+	Solving for t
+	\[
+		\Delta t = \frac{\hbar}{2\Delta E} =  \frac{\hbar}{2(140 \un{MeV})} = 2.35 \e{-24}\un{s}
+	\]
+	\item 
+	\[
+		x = \frac{\Delta t}{c} = \frac{2.35 \e{-24}\un{s}}{c} = 7.05 \e{-16}\un{m}
+	\]
+	\item 
+	\[
+		n = \frac{1\un{\mu s}}{2.35 \e{-24}\un{s}} = 4.26 \e{17}
+	\]
+	
+\end{enumerate}
+	
+\item [6-14]
+\begin{enumerate}
+	\item Given Heisenberg's uncertainty principle
+	\[
+		\Delta x \Delta p \sim \hbar
+	\]
+	Solving for $\Delta p$
+	\[
+		\Delta p \sim \frac{\hbar}{\Delta x} \sim \frac{\hbar}{L}
+	\]
+	The energy of the particle is given by the equation
+	\[
+		E = \frac{p^2}{2m}
+	\]
+	So the smallest possible energy is given by 
+	\[
+		E = \frac{\hbar^2}{2mL^2}
+	\]
+	\item Given equation 6-24
+	\[
+		E_n = n^2 \frac{\pi^2 \hbar^2}{2mL^2}
+	\]
+	For $n=1$
+	\[
+		E_1 = \frac{\pi^2 \hbar^2}{2mL^2}
+	\]
+	The minumum allowed energy according to the time-independent Schrodinger equation is greater than the minimum allowed energy according to the Heisenberg uncertainty equation by a factor of $\pi^2$.
+\end{enumerate}
+
+\item [6-21]
+	Given equation 6-24
+	\[
+		E_n = n^2 \frac{\pi^2 \hbar^2}{2mL^2}
+	\]
+\begin{enumerate}
+	\item For electron $n-1$
+	\[
+		E_1 = \frac{\pi^2 \hbar^2}{2(511\un{keV})(10\un{fm})} = 3.76 \un{GeV}
+	\]
+	\item 
+	\[
+		E_1 = \frac{\pi^2 \hbar^2}{2(938\un{MeV})(10\un{fm})} = 2.05 \un{MeV}
+	\]
+	\item As the second state for each particle is simply a factor of four larger, the difference between the first and second state in each case is three times the energy of the particle in state 1.
+	
+\end{enumerate}
+
+\item [6-22]
+	Given equation 6-24
+	\[
+		E_n = n^2 \frac{\pi^2 \hbar^2}{2mL^2}
+	\]
+	And 
+	\[
+		F = \frac{-dE_n}{dL}
+	\]
+	Then
+	\[
+		F = -2 n^2 \frac{\pi^2 \hbar^2}{2mL^3} = -\frac{\pi^2 \hbar^2}{(511\un{keV})(10\e{-10}\un{m})^3} = -1.2 \e{-7}\un{N}
+	\]
+	The weight of an electron is given by its mass times the acceleration of gravity
+	\[
+		F = mg = (511\un{keV})(9.91\un{m/s^2}) = 8.93\e{-30}\un{N} 
+	\]
+	This result is much smaller than the quantum mechanical result. **Still need to answer why
+
+\item [6-23]
+The wave function of a particle in some state $a$ inside an infinite square well is given by 
+\[
+	\Psi_a(x) =\sqrt{\frac{2}{L}} \sin{\left( \frac{a\pi x}{L} \right)}
+\]
+Evaluating the integral
+\[
+	0 = \int_0^L \Psi_n(x) \Psi_m(x) \; dx
+\]
+\[
+	= \int_0^L \sqrt{\frac{2}{L}} \sin{\left( \frac{n\pi x}{L} \right)} \sqrt{\frac{2}{L}} \sin{\left( \frac{m\pi x}{L} \right)} \; dx
+\]
+\[
+	= \frac{1}{L}\int_0^L 2\sin{\left( \frac{n\pi}{L}x \right)}\sin{\left( \frac{m\pi}{L}x \right)} \; dx
+\]
+\[
+	= \frac{1}{L} \int_0^1 \cos{ \left( \frac{m+n}{L} \pi x \right) } - \cos{ \left( \frac{m-n}{L} \pi x \right) } \; dx
+\]
+\[
+	= \frac{1}{L}\left( \frac{\sin{\left( \frac{m+n}{L} \pi L \right)}}{\left( \frac{m+n}{L} \pi \right)} - \frac{\sin{\left( \frac{m-n}{L} \pi L \right)}}{\left( \frac{m-n}{L} \pi \right)} \right)
+\]
+Clearing denominators
+\[
+	0 = \sin{((m+n)\pi)} - \sin{((m-n)\pi)}
+\]
+\[
+	\sin{((m+n)\pi)} = \sin{((m-n)\pi)}
+\]
+In this form it is apparent that $m$ and $n$ are orthogonal.
+
+\end{enumerate}
+\end{document}
+
+
