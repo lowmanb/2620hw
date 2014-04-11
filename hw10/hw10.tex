@@ -1,0 +1,244 @@
+\documentclass[]{2620hw}
+
+\hwnum{10}
+\due{March 4th, 2014}
+
+
+\begin{document}
+\maketitle	
+
+\begin{enumerate}
+
+\item [7-2]
+The energy level of the box is given by the equation
+\[
+	E = \frac{\hbar^2 \pi^2}{2m} \left( \frac{n_1^2}{L_1^2} + \frac{n_2^2}{L_2^2} + \frac{n_3^2}{L_3^2} \right)
+\]
+Substituting the given values of $L$ and  taking out constants
+\[
+	E \propto \frac{n_1^2}{1} + \frac{n_2^2}{4} + \frac{n_3^2}{9}
+\]
+The set of $n_1, n_2, n_3$ that give the 10 lowest energies is then
+\begin{multline*}
+	\{ (1,1,1), (1,1,2), (1,2,1), (1, 2, 2), (1, 1, 3),\\ (1, 3, 1), (1, 2, 3), (1, 3, 2), (1, 1, 4), (1, 2,4) \} 
+\end{multline*}
+
+\item [7-3]
+\begin{enumerate}
+	\item
+	Given the wave function for a particle in an infinite one dimensional square well
+	\[
+		\Psi_n(x)  = \sqrt{ \frac{2}{L} } \sin \frac{n \pi x}{L} 
+	\]
+	In this problem, however, this equation only apples to the $y$ and $z$ dimensions.
+	Applying the boundary conditions at $x =\pm L/2$ yields the following equation (there is an additional factor of two)
+	\[
+		\Psi_n(x)  = \sqrt{ \frac{2}{L} } \sin \frac{2 n \pi x}{L}
+	\]
+	The complete wave function for a particle in an infinite three dimensional square well $L_1 = L_2 = L_3$ is then
+	\[
+		\Psi(x, y, z) = \frac{2 \sqrt{2}}{\sqrt{L^3}} \sin \left( \frac{2 n_1 \pi x }{L} \right) \sin \left( \frac{n_2 \pi y }{L} \right) \sin \left( \frac{n_3 \pi z }{L} \right)
+	\]
+	And 
+	\[
+		\Psi_{111}(x, y, z) = \frac{ 2 \sqrt{2}}{\sqrt{L^3}} \sin \left( \frac{2 \pi x }{L} \right) \sin \left( \frac{\pi y }{L} \right) \sin \left( \frac{\pi z }{L} \right)
+	\]
+	\item
+	The energy for dimensions $y$ and $z$ is given by 
+	\[
+		\frac{\hbar^2 \pi^2}{2mL^2} \cdot n^2
+	\]
+	And $x$
+	\[
+		\frac{\hbar^2 \pi^2}{2mL^2} \cdot 2 n^2
+	\]
+	So the allowed energies of the entire box is given by the sum of the energies for each dimension (written here without constants)
+	\[
+		E \propto 2 n_1^2 + n_2^2 + n_3^2 
+	\]
+	In the case where $V=0$ for $0 < x < L$, solving at the boundary conditions in $x$ does not yield the same factor of two in the sin term. The total energy is then
+	\[
+		E \propto n_1^2 + n_2^2 + n_3^2 
+	\]
+
+\end{enumerate}
+
+\item [7-8]
+\begin{enumerate}
+	\item Given the wave function for a particle in an infinite one dimensional well
+	\[
+		\Psi_n(x)  = \sqrt{ \frac{2}{L} } \sin \frac{n \pi x}{L} 
+	\]
+	The wave functions for this particle are then given by 
+	\[
+		\Psi_n(x)  = \sqrt{ \frac{2}{L} } \sin \frac{n \pi x}{L}
+	\]
+	\[
+		\Psi_n(y)  = \sqrt{ \frac{2}{L} } \sin \frac{n \pi y}{L}
+	\]
+	
+	\item 
+	The energy of each dimension is given by 
+	\[
+		\frac{\hbar^2 \pi^2}{2mL^2} \cdot n^2
+	\]
+	So the allowed energies of the entire box is given by the sum of the energies for each dimension (written here without constants)
+	\[
+		E \propto n_1^2 + n_2^2 
+	\]
+
+	\item The set of quantum numbers that given the lowest degeneracy state is then 
+	\[
+		\{ (1, 2), (2, 1) \}
+	\]
+
+\end{enumerate}
+
+\item [7-13]
+	$|L|^2$ is given by 
+	\[
+		|L|^2 =  L_x^2 + L_y^2 + L_z^2
+	\]
+	Therefore 	
+	\[
+		L_x^2 + L_y^2 = |L|^2 - L_z^2 
+	\]
+	\[
+		 = \left(\sqrt{\ell(\ell+1)}\hbar \right )^2  - (m\hbar)^2
+	\]
+	
+	With $l$ = 2, $m$ can take on the following values 
+	\[
+		0, \pm 1, \pm2
+	\]
+\begin{enumerate}
+	\item The minimum value for $L_x^2 + L_y^2$ is then
+	\[
+		L_x^2 + L_y^2 = \left(\sqrt{2(2+1)} \hbar\right)^2 - (2\hbar)^2 = 2\hbar^2 
+	\]
+
+	\item And the maximum value 
+	\[
+		L_x^2 + L_y^2 = \left(\sqrt{2(2+1)} \hbar\right)^2 - (0\hbar)^2  = 6\hbar^2 
+	\]
+	\item 
+	\[
+		L_x^2 + L_y^2 = \left(\sqrt{2(2+1)} \hbar\right)^2 - (1\hbar)^2  = 5\hbar^2
+	\]
+	No, neither $L_x^2$ nor $L_y^2$ can be determined from this value. 
+	\item The minimum value of $n$ is equal to $l+1 = 3$
+\end{enumerate}
+
+\item [7-15]
+The effective potential energy of an electron in a hydrogen atom is 
+\[
+	V_{\text{eff}} = V(r) + \frac{\hbar^2 L^2}{2mr^2}
+\]
+Differentiating with respect to $t$
+\[
+	 0 = \frac{\hbar^2 L}{mr^2} \frac{dL}{dt}
+\]
+Because 
+\[
+	\frac{\hbar^2 L}{mr^2} \neq 0
+\]
+It must be that
+\[
+	\frac{dL}{dt} = 0
+\]
+
+\item [7-16]
+\begin{enumerate}
+	\item If $\ell = 3$, then $m = 0, \pm 1, \pm 2, \pm 3$ and the smallest value of $n$ is 4.
+	\item If $\ell = 4$, then $m = 0, \pm 1, \pm 2, \pm 3, \pm 4$ and the smallest value of $n$ is 5.
+	\item If $\ell = 0$, then $m = 0$ and the smallest value of $n$ is 1.
+	\item The energy of an electron in a hydrogen atom is given by (where $Z = 1$)
+	\[
+		E = \frac{-Z^2}{n^2}(13.5)\un{eV}
+	\]
+	\begin{itemize} 
+		\item For (a):
+		\[
+			E_{\text{min}} = \frac{-13.6}{4^2} = -0.85 \un{eV}
+		\]
+		\item For (b)
+		\[
+			E_{\text{min}} = \frac{-13.6}{5^2} = -0.54 \un{eV}
+		\]
+		\item For (c)
+		\[
+			E_{\text{min}} = \frac{-13.6}{1^2} = -13.6 \un{eV}
+		\]
+	\end{itemize}
+\end{enumerate}
+
+\item [7-20]
+\begin{enumerate}
+	\item The wave function for Hydrogen in its ground state is
+	\[
+		\Psi_{100}(r) = \frac{1}{\sqrt{\pi}} \left( \frac{Z}{a_0} \right)^{3/2}e^{\frac{-Zr}{a_0}}
+	\]
+	For $r = a_0$ and $Z = 1$
+	\[
+		\Psi_{100}(a_0) = \frac{1}{\sqrt{\pi}} \left( \frac{1}{a_0} \right)^{3/2}e^{-1}
+	\]
+	\[
+		=\frac{1}{e\sqrt{\pi}} \left( \frac{1}{a_0} \right)^{3/2}
+	\]
+	\item For the probability density 
+	\[
+		|\Psi_{100}(a_0)|^2 = \left [ \frac{1}{e\sqrt{\pi}} \left( \frac{1}{a_0} \right)^{3/2} \right]^2
+	\]
+	\[
+		|\Psi_{100}(a_0)|^2 = \frac{1}{e^2\pi} \left( \frac{1}{a_0} \right)^3
+	\]
+	\item $|\Psi_{100}(r)|^2$ can be equated to $P(r)$ in the following way 
+	\[
+		P(r) \frac{dr}{dV} = |\Psi_{100}(r)|^2 
+	\]
+	The volume of a sphere is given by
+	\[
+		V = \frac{4}{3}\pi r^3
+	\]
+	Thus 
+	\[
+		\frac{dV}{dr} = 4\pi r^2
+	\]
+	or 
+	\[
+		dV = 4\pi r^2 \: dr
+	\]
+	Substitution in to the first equation with $r = a_0$ yields 
+	\[
+		P(a_0) = |\Psi_{100}(r)|^2 4\pi a_0^2
+	\]
+	\[
+		= \frac{1}{e^2\pi} \left( \frac{1}{a_0} \right)^3 ( 4\pi a_0^2)
+	\]
+	\[
+		= \frac{4}{e^2a_0}
+	\]
+\end{enumerate}
+
+\item [7-21] The radial probability density for hydrogen is given by 
+\[
+	 |\Psi_{100}(r)|^2= \left[ \frac{1}{\sqrt{\pi}} \left( \frac{1}{a_0} \right)^{3/2}e^{\frac{-r}{a_0}}  \right]^2
+\]
+\[
+	 = \frac{1}{\pi a_0^3}e^{\frac{-2r}{a_0}}
+\]
+For $\Delta r = 0.03a_0$ (Because the interval of interest is given as a Delta, I presume this implies  to numerically estimate the integral, not evaluate it)
+\begin{enumerate}
+	\item For $r=a_0$
+	\[ 
+		P(1.03a_0) = \frac{1}{\pi a_0^3}e^{\frac{-2a_0}{a_0}} ( 0.03a_0) = \frac{0.03}{e^2 \pi a_0^2}
+	\]
+	\item For $r = 2a_0$
+	\[
+		P(2.03a_0) = \frac{1}{\pi a_0^3}e^{\frac{-2(2a_0)}{a_0}} ( 0.03a_0) = \frac{0.03}{e^4 \pi a_0^2}
+	\]
+\end{enumerate}
+
+\end{enumerate}
+
+\end{document}

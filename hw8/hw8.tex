@@ -1,0 +1,117 @@
+\documentclass[]{2620hw}
+
+\hwnum{8}
+\due{March 21st, 2014}
+
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+    \item [6-28] ~
+	\begin{figure}[ht!]
+	\begin{center}
+		\includegraphics[width=140mm]{1.png}
+	\end{center}
+	\end{figure}
+	
+
+
+	\item [6-30]
+	\begin{enumerate}
+	    \item For $n = 3$ and well on the interval $[0, L]$
+		\[
+			\psi_n(x) = \sqrt{ \frac{2}{L} }\cos \frac{3 \pi x}{L} 
+		\]
+		It follows then, that 
+		\[
+			\langle x \rangle = \int_0^L x|\psi(x)|^2 \; dx
+		\]
+		Because the integrand is of odd parity the bounds of integration are semetric, the solution integral must equal $L / 2$
+		\item For $\langle x^2 \rangle$
+		\[
+			\langle x^2 \rangle = \int_0^L x|\psi(x^2)|^2 \; dx = \frac{2}{L} \int_0^L x^2 \cos^2 \frac{3 \pi x}{L} \; dx
+		\]
+		\[
+			= \frac{1}{L} \left[ \int_0^L x^2 \; dx + \int_0^L x^2 cos \frac{6 \pi}{L} \; dx \right] = L^2 \left( \frac{1}{3} - \frac{1}{18\pi^2} \right)
+		\] 
+		
+	\end{enumerate}
+
+\item [6-33]
+	\[
+		\sigma_x = \sqrt{ \langle x^2 \rangle  - \langle x \rangle^2 } = \sqrt{ L^2 \left( \frac{1}{3} - \frac{1}{18\pi^2} \right) } 
+	\]
+	\[
+		\sigma_p = \sqrt{ \langle p^2 \rangle  - \langle p \rangle^2 } = \sqrt{ 2mE }
+	\]
+	\[
+		\sigma_x \sigma_p = \sqrt{ 2mEL^2 \left( \frac{1}{3} - \frac{1}{18\pi^2} \right) }
+	\]
+	\item [6-34] 
+	If
+	\[
+		\psi_0 = A_0 e^{- m \omega x^2 / \hbar}
+	\]
+	And 
+	\[
+		A_0 = \left( \frac{m \omega }{\hbar} \right)^{1/4}
+	\]
+	Then in the ground state, $\langle x \rangle$ = is given by
+	\[
+		\langle x \rangle = \int x|\psi(x)|^2 \; dx = \sqrt{ \frac{m \omega}{\pi \hbar} } \int x e^{ - m \omega x^2 / \hbar} \; dx	= 0;
+	\]
+	By inspection of symmetry, this integral is equal to zero for the same reasons as cited in  6-30(a)
+	
+	For $\langle x^2 \rangle$
+		\[
+			\langle x^2 \rangle = \int x|\psi(x^2)|^2 \; dx = \int \sqrt{ \frac{m \omega}{\hbar \pi}} x^2e^{- \frac{m\omega x^2}{\hbar}} \; dx 
+		\]
+		After a change of variable 
+		\[
+			\left( \frac{h}{m \omega} \right) \left( \frac{1}{\sqrt{\pi}}\right) \int u^2 e^{-u^2} \; du = \left( \frac{h}{m \omega} \right) \left( \frac{1}{\sqrt{\pi}}\right) \left( \frac{\sqrt{\pi}}{2} \right) = \frac{\hbar}{2m\omega}
+		\]
+
+
+	\item [6-36]
+	\begin{enumerate}
+	    \item For state $n = 0$, the total wave funciton is given by 
+		\[
+			\psi_0(x, t) = e^{ - \frac{i E_0 t}{\hbar}}\psi_o(x) 
+		\]
+		If
+		\[
+			\psi_0(x) = A_0 e^{- \frac{im\omega x^2}{2 \hbar}}	
+		\]
+		And
+		\[
+			A_0 = \left( \frac{m \omega}{\hbar \pi} \right)^{1/4}
+		\]
+		And
+		\[
+			E_0 = \frac{1}{2} \hbar \omega
+		\]
+		Then
+		\[
+			\psi_0(x,t) = \left( \frac{m \omega}{\hbar \pi} \right)^{1/4} \left( e^{ - \frac{i \hbar \omega t}{2 \hbar}} \right) \left( e^{- \frac{im\omega x^2}{2 \hbar}} \right)
+		\]
+		\[
+			= \left( \frac{m \omega}{\hbar \pi} \right)^{1/4} e ^{- \frac{i\omega(\hbar t + m x^2)}{2\hbar}}
+		\]
+
+		\item As 
+		\[
+			\hat{p}^2 e^{- \frac{m \omega}{2 \hbar}} = ( - (m\omega x)^2 + \hbar m \omega ) e^{- \frac{m \omega x^2}{2 \hbar}}
+		\]
+		It follows that
+		\[
+			\langle p^2 \rangle = \int \sqrt{ \frac{m \omega}{\hbar \pi}} ( - (m\omega x)^2 + \hbar m \omega )e^{- \frac{m \omega x^2}{\hbar}} \; dx
+		\]
+		Changing variables 
+		\[
+			\langle p^2 \rangle = \frac{hm\omega}{\sqrt{\pi}} \int (1-y^2)e^{-y^2} \; dy = \left( \frac{hm\omega}{\sqrt{\pi}} \right) \left( \frac{\sqrt{\pi}}{2} \right) = \frac{hm\omega}{2}
+		\]
+		
+	\end{enumerate}
+\end{enumerate}
+
+\end{document}
