@@ -1,0 +1,199 @@
+\documentclass[12pt]{2620hw}
+
+\hwnum{11}
+\due{April 11, 2014}
+
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+
+\item [7-31] Given that the magnitude of the angular momentum is
+\[
+	|S| = (3/4)^{1/2} \hbar
+\]
+The rotational velocity of the particle is then 
+\[
+	v_r = \frac{|S|}{m_er} = \frac{(3/4)^{1/2}\hbar}{(511\un{keV/c^2})(10^{-15}\un{m})} \approx 1\e{11}\un{m/s} 
+\]
+or 3 orders of magnitude greater thatn the speed of light -- which is impossible.
+
+\item [7-37] 
+\begin{enumerate}
+	\item Given the possible values of $j$
+	\[
+		j = | \ell + s | \;\;\text{or}\;\; j = | \ell - s | 
+	\]
+	Then 
+	\[
+		j = 2 + \frac{1}{2} = \frac{5}{2} \;\;\text{or}\;\; j = 2 - \frac{1}{2} = \frac{3}{2}
+	\]
+	\item The magnitude of the total anuglar momentum is given by
+	\[
+		|J|	= \sqrt{ j ( j + 1) } \hbar
+	\]
+	\begin{itemize}
+		\item For $j = \frac{5}{2}$
+		\[
+			|J|	= \sqrt{ \frac{5}{2} \left( \frac{5}{2} + 1 \right) } \hbar  = \sqrt{ \frac{35}{4} } \hbar
+		\]
+		\item For $j = \frac{3}{2}$
+		\[
+			|J|	= \sqrt{ \frac{3}{2} \left( \frac{3}{2} + 1 \right) } \hbar = \sqrt{ \frac{15}{4} } \hbar
+		\]
+		
+	\end{itemize}
+	\item The $z$ component of the angular momentum is given by 
+	\[
+		J_z = m_j \hbar	
+	\]
+	\begin{itemize}
+		\item For $j = \frac{3}{2}$
+		\[
+			m_j = \pm \frac{1}{2}, \pm \frac{3}{2}
+		\]
+		Therefore
+		\[
+			J_z = \pm \frac{1}{2}\hbar, \pm \frac{3}{2}\hbar
+		\]
+		\item For $j = \frac{5}{2}$
+		\[
+			m_j = \pm \frac{1}{2}, \pm \frac{3}{2}, \pm \frac{5}{2}
+		\]
+		Therefore
+		\[
+			J_z = \pm \frac{1}{2}\hbar, \pm \frac{3}{2}\hbar, \pm \frac{5}{2}\hbar
+		\]
+		
+	\end{itemize}
+\end{enumerate}
+
+\item [7-40] For $\ell_1 = \ell_2 = 1$ and $s_1 = s_2 = \frac{1}{2}$
+\begin{enumerate}
+	\item Given
+	\[
+		L \in \{\ell_1 + \ell_2, \ell_1 + \ell_2 -1, ..., |\ell_1 - \ell_2 | \}
+	\]
+	It follows that 
+	\[
+		L = 0,1,2
+	\]
+	\item Given
+	\[
+		S \in \{s_1 + s_2, s_1 + s_2 -1, ..., |s_1 - s_2 | \}
+	\]
+	It follows that
+	\[
+		S = 1, 0
+	\]
+	\item Given 
+	\[
+		J = L + S
+	\]
+	Finding all combinations of values from (a) and (b) is trivial
+	\[
+		J = 0,1,2,3	
+	\]
+	\item Given 
+	\[
+		j_1 \in \{\ell_1 + s_1, \ell_1 + s_1 -1, ..., |\ell_1 - s_1 | \}
+	\]
+	It follows that 
+	\[
+		j_1 =  \frac{3}{2}, \frac{1}{2} \;\; \text{and} \;\; j_2 =  \frac{3}{2}, \frac{1}{2}
+	\]
+	\item Given that 
+	\[
+		J = j_1 + j_2
+	\]
+	It is again trivial to find all combinations of $j_1$ and $j_2$ from part (d)
+	\[
+		J = 0,1,2,3
+	\]
+	This result does indeed match that from part (c)
+\end{enumerate}
+
+\item [7-45] Given the energy of an infinite square well in the $n$th state
+\[
+	E_n = \frac{n^2 \hbar^2 \pi^2}{2mL^2}
+\]
+\begin{enumerate}
+	\item Given that there are 5 electrons in the well, the energy level distribution must be (by Pauli exclusion)
+	\[
+		E_{ \text{total} } = 2E_1 + 2E_2 + E_3
+	\]
+	So the total energy is 
+	\[
+		E_{ \text{total} } = \frac{\hbar^2 \pi^2}{2mL^2} \left( 2(1^2) + 2(2^2) + 3^2 \right) =  \frac{19\hbar^2 \pi^2}{2(511\un{keV/c^2})(1 \un{nm})^2}= 7.14\un{eV} 
+	\]
+	\item Becuase pions do not obey the Pauli exclusion principle, all five can stay in the $n=1$ state
+	\[
+		E = \frac{\hbar^2 \pi^2}{2mL^2} \left( 5(1^2) \right) =\frac{5\hbar^2 \pi^2}{2(264)(511\un{keV/c^2})(1 \un{nm})^2}= 7.11\un{meV} 
+	\]
+\end{enumerate}
+
+\item [7-50] Given that 
+\[
+	E = \frac{Z^2(13.6\un{eV})}{n^2} 
+\]
+Then $Z_{ \text{eff}}$ for the penetrating 3s state is 
+\[
+	Z_{ \text{eff} } = \sqrt{ \frac{n^2E}{13.6\un{eV}} } = \sqrt{ \frac{9(5.14\un{eV})}{13.6\un{eV}} } = 1.84
+\]
+
+\item [7-68] Using basic coordinate identities, we know that
+\[
+	\cos \theta = \frac{L_z}{L}
+\]
+It is also known that 
+\[
+	L_z = m_{j}\hbar
+\]
+and 
+\[
+	L = \sqrt{ \ell (\ell +1) } \hbar
+\]
+Substituting
+\[
+	\cos \theta = \frac{m_{j}\hbar}{\sqrt{ \ell (\ell +1) } \hbar}  = \frac{m_{j}}{\sqrt{ \ell (\ell +1) }}
+\]
+Substituting $\ell$ for $m_{j}$ and solving for $\theta_{\text{min}}$
+\[
+	\theta_{\text{min}} = \cos^{-1} \left(\frac{\ell}{\sqrt{\ell(\ell+1)}} \right)
+\]
+Using the trigonometric identity
+\[
+	\sin^2 \theta = 1 - \cos^2 \theta
+\]
+\[
+	\sin^2 \theta = 1 - \left( \frac{\ell}{\sqrt{ \ell (\ell +1) }}\right)^2 = 1 - \frac{\ell^2}{\ell(\ell+1)}
+\]
+\[
+	= \frac{\ell(\ell+1)- \ell^2}{\ell(\ell+1)} = \frac{1}{\ell + 1}
+\]
+As $\ell \rightarrow \infty$
+\[
+	\theta_{\text{min}} = \frac{1}{\sqrt{\ell}}
+\]
+By the small angle approximation.
+
+\item [7-70] Given that the wave function for a hydrogen atom in its ground state is 
+\[
+	\Psi(r) = \frac{1}{\sqrt{\pi a_0^3}}e^{\frac{-r}{a_0}}
+\]
+And the radial probability density is just the probability density $|\Psi(r)$ squared integrated over the surface area of the sphere (this was in the last problem set)
+\[
+	P(R) = \int_0^R \frac{4 \pi r^2}{\pi a_0^3}e^{\frac{-2r}{a_0}} \; dr  = \frac{4}{a_0^3}\int_0^Rr^2 e^{\frac{-2r}{a_0}} \; dr 
+\]
+Since $e^{\frac{-2r}{a_0}} = 1$
+\[
+	P(R) = \frac{4}{a_0^3}\int_0^Rr^2 \; dr = \frac{4}{3}\frac{R^3}{a_0^3}
+\]
+Substituting known values
+\[
+	P(R) = \frac{4}{3}\frac{(10^{-15}\un{m})^3}{(0.0529\un{nm})^3}	 = 9\e{-15}
+\]
+
+\end{enumerate}
+
+\end{document}
