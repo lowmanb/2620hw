@@ -1,0 +1,167 @@
+\documentclass{2620hw}
+
+\hwnum{12}
+\due{April 25, 2014}
+
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+
+\item [11-5] If the dueteron did in fact consist of two neutrons and one electron, then the spin of the ground state would have to be (by Pauli Exclusion)
+\[
+	S = \frac{1}{2} \;\text{(proton 1)}\;- \frac{1}{2}\;\text{(proton 2)}\; + \frac{1}{2}\;\text{(electron 1)}\; = \frac{1}{2}
+\]
+This is different that the actual spin of the the deuteron (1). The magnetic moment, like the spin, is also dictated by the electron, as the neutrons cancel
+\[
+	\mu_n - \mu_n + \mu_B = \mu_B	
+\]
+$\mu_B$ is much larger than the acutal deuteron dipole moment.
+
+\item [11-10] Given the equation 
+\[
+	R = R_0A^{1/3}
+\]
+Where $R_0 = 1.2 \un{fm}$
+\begin{enumerate}
+	\item For $A = {}^{16}$O
+	\[
+		R = 1.2 (16)^{1/3} \un{fm} = 3.0 \un{fm}
+	\]
+	\item For $A = {}^{56}$Fe
+	\[
+		R = 1.2 (56)^{1/3} \un{fm} = 4.6 \un{fm}
+	\]
+	\item For $A = {}^{197}$Au
+	\[
+		R = 1.2 (197)^{1/3} \un{fm} = 7.0 \un{fm}
+	\]
+	\item For $A = {}^{238}$U
+	\[
+		R = 1.2 (238)^{1/3} \un{fm} = 7.4 \un{fm}
+	\]
+
+\end{enumerate}
+
+\item [11-18] 
+\begin{enumerate}
+	\item Given the atomic mass number, Radium contains
+	\[
+		N_0 = \frac{6.02\e{23}\un{atoms/mole}}{226} = 2.66\e{21}\un{nuclei}
+	\]
+	And given the derivative of the nuclear decay equation
+	\[
+		N(t) = N_0e^{-t/\tau}
+	\]
+	\[
+		\frac{dN}{dt} = -\frac{t}{\tau}N_0e^{-t/\tau}
+	\]
+	For a $\Delta t$ of 1s
+	\[
+		\Delta N = \frac{1\un{s} \cdot \ln 2}{1620\un{y}} e^{\frac{1 \ln 2}{1620 \un{y}}} \approx 1 \un{Ci}
+	\]
+	\item The alpha decay is 
+	\[
+		{}^{226}Ra \rightarrow {}^{224} Rn - {}^{4}He
+	\]
+	So the Q value is 
+	\[
+		M({}^{226}Ra) \rightarrow M({}^{224} Rn) - M ({}^{4}He) = 0.005227 \un{u} = 4.87 \un{MeV}
+	\]
+\end{enumerate}
+
+\item[11-30] Given that the decomposition is $\beta^-$ decay, the equation is 
+\[
+	{}^{72}_{30}Zn \rightarrow {}^{72}_{31}Gn + e^- +  \overline{v_e}
+\]
+Applying the mass excesses for each side of the decay
+\[
+	Q = 68.594\un{MeV}-68.126\un{MeV} = 0.458\un{MeV}
+\]
+As Gallium is much more massive that the electron ($10^5$ times more) nearly all of the energy is carried by the other two particles. The endpoint energy, then, is very very close to 0.458\un{MeV}
+
+\item [11-35] The radius of ${}^{12}$C is given by 
+\[
+	R = R_0A^{1/3} = 12 (12)^{1/3} \un{fm} = 2.75\un{fm}		
+\]
+The Coloumb potential energy is given by
+\[
+	V = \frac{e^2}{4\pi\epsilon_0 (2.75\un{fm})}	
+\]
+And since 
+\[
+	\alpha = \frac{e^2}{4\pi\epsilon_0} \frac{1}{\hbar c}
+\]
+\[
+	V = \frac{\alpha\hbar c}{(2.75\un{fm})} = 0.52\un{MeV}
+\]
+The gravitational potential energy is
+\[
+	V = G \frac{m_{\text{proton}}^2}{(2.75\un{fm})} = 4\e{-37}\un{MeV}
+\]
+The book Gives $V_{\text{strong}}$ to be approximately 50 MeV.\\
+For a seperation distance of $3 \un{fm}$
+\[
+	V_{\text{strong}} =  \frac{50\un{MeV}}{2.75\un{fm}} \approx 2900\un{N}
+\]
+\[
+	V_{\text{Coloumb}} =  \frac{.52\un{MeV}}{2.75\un{fm}} \approx 30 \un{N}
+\]
+\[
+	V_{\text{Grav}} =  \frac{4\e{-37}\un{MeV}}{2.75\un{fm}} \approx 2^{-35} \un{N}
+\]
+
+\item [11-36] Given 
+\[
+	R = \frac{\hbar }{mc}
+\]
+Therefore
+\[
+	m  = \frac{\hbar}{Rc} = \frac{\hbar}{(5\un{fm}) c} = 39.5 \un{MeV/c^2}
+\]
+
+\item [11-60] The following fission reaction is representative of this problem. 
+\[
+	{}^{235}U + n \rightarrow {}^{92}Kr + {}^{142}Ba + 2n + 179.4 \un{MeV}
+\]
+\begin{enumerate}
+	\item Given the thermal efficiency and electric efficiency and the energy released per fission, fissions / second is given by 
+	\[
+		P = \frac{0.3 \cdot 1000\un{MW}}{179\un{MeV / fiss}} \approx 1.16 \e{20}\un{fiss/sec}
+	\]
+Considering the mass of ${}^{235}U = 3.9 \e{-25}\un{kg}$, the rate of burn is
+\[
+	\text{Burn rate} = 3.9 \e{-25}\un{kg} \cdot 1.16 \e{20}\un{fiss/sec} =  3.9\un{kg/day}
+\]
+	\item Or, per year
+	\[
+		\text{Burn rate} = 	 3.9\un{kg/day} \cdot 365 \approx 1420 \un{kg/year}
+	\]
+	\item Coal requires
+	\[
+		\frac{3.3\e{9}\un{J/s}}{3.15\e{7}\un{J/kg}} = 1.06 \un{kg/s} 
+	\]
+	Per year, that's approximately $3\e{9}\un{kg}$ of coal
+
+\end{enumerate}
+
+\item [11-88] Assuming the the equations have equal probability of occuring, the net equation after all reactions is 
+\[
+	5 {}^{2}H \rightarrow {}^4He + {}^3He + {}^1H + n + 25 \un{MeV}
+\]
+Since there are
+\[
+	\frac{4\un{kg}}{18\un{g}}\cdot 2 = 444 \text{moles(H) in }H_2O
+\]
+Multiplying by Avagadros Number and  1.5\e{-4} yeilds the number of ${}^2H$ nuclei
+\[
+	4.01\e{22}\; {}^2H \text{ nuclei}
+\]
+As $5\un{MeV}$ are released for each ${}^2H$ nuclei, the total energy released is 
+\[
+	5\un{MeV} \cdot 4.01\e{22}\; {}^2H \text{ nuclei} = 3.2\e{10}\un{J}
+\]
+ 
+\end{enumerate}
+
+\end{document}
